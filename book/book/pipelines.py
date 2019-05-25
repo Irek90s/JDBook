@@ -12,6 +12,6 @@ collection = client['jdorg']['book']
 
 class BookPipeline(object):
     def process_item(self, item, spider):
-        print(item)
+        #print(item)
         collection.insert(item)
         return item
